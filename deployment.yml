@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grocery-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: grocery
+  template:
+    metadata:
+      labels:
+        app: grocery
+    spec:
+      containers:
+      - name: grocery
+        image: YOUR_DOCKERHUB_USERNAME/grocery-shop:latest
+        ports:
+        - containerPort: 8080
+
