@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: grocery
-        image: YOUR_DOCKERHUB_USERNAME/grocery-shop:latest
+        image: sampatpeddi8586/grocery-shop:latest
         ports:
         - containerPort: 8080
 
